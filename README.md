@@ -23,7 +23,7 @@ This approach consists of two components:
 4. Under the **Schedule** tab, set how often to update the file list (e.g., weekly on Sundays).  
 5. Under the **Task Settings** tab, in the **User-defined script** box, enter the contents of `create-file-list.sh`.  
    - **Tip:** Copy the script to your NAS and open it in Synology's **Text Editor** (available in Package Center) for easy modification.  
-6. Modify the `OUTPUT_FILE` variable in the script as needed.  
+6. Modify the `FOLDERS_TO_SCAN` and `OUTPUT_FOLDER` variables in the script as needed.  
 7. Click **OK** to create the task.  
 
 ### **Mac Configuration (Apple Automator)**  
