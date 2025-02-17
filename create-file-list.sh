@@ -1,6 +1,6 @@
 DATE_TIME=$(date +"%Y-%m-%d-%H-%M-%S")
 TMP_FILE="/tmp/volume-file-list-$DATE_TIME"
-FOLDERS_TO_SCAN="/volume1/MIXED/ /volume2/TV/"
+FOLDERS_TO_SCAN="/volume1/ /volume2/example-dir/"
 OUTPUT_FOLDER="/volume1/MIXED/#lists/"
 echo '"Filename","Size","Modification Date"' > $TMP_FILE.csv
 find $FOLDERS_TO_SCAN -type f -printf '"%p","%s","%TY-%Tm-%Td %TH:%TM:%TS"\n' >> $TMP_FILE.csv
