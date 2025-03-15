@@ -41,7 +41,17 @@ This approach consists of two components:
 ## Notes  
 
 - Ensure your Mac has access to the NAS shared folder where the file list is stored.  
-- You can modify the script to adjust file formats, filters, or additional automation.  
+- You can modify the script to adjust file formats, filters, or add additional actions.  
+
+## FAQ
+
+### My folder action is not firing. How might I fix this?
+
+1. Locate your `.workflow` file in `~/Library/Workflows/Applications/Folder Actions/`
+1. Move your `.workflow` file to your Desktop
+1. Delete the containing folder `~/Library/Workflows/Applications`
+1. Move `.workflow` file from Desktop back into `~/Library/Workflows`
+1. Double-click `.workflow` file to re-install
 
 ## License  
 
